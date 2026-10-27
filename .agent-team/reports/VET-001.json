@@ -1,0 +1,48 @@
+{
+  "task_id": "VET-001",
+  "summary": "Added a category filter to the demo shop and verified it with unit tests plus a live browser check.",
+  "files_changed": [
+    {
+      "path": "demo/catalog.js",
+      "purpose": "filter helper"
+    },
+    {
+      "path": "demo/app.js",
+      "purpose": "select wiring"
+    },
+    {
+      "path": "demo/index.html",
+      "purpose": "filter and empty state"
+    },
+    {
+      "path": "demo/styles.css",
+      "purpose": "shop layout"
+    },
+    {
+      "path": "demo/catalog.test.js",
+      "purpose": "logic tests"
+    }
+  ],
+  "quality_verification": [
+    {
+      "command": "node --test demo/catalog.test.js",
+      "result": "4 passed"
+    },
+    {
+      "command": "node --test test/*.test.js demo/*.test.js",
+      "result": "19 passed"
+    },
+    {
+      "command": "browser lighting filter",
+      "result": "2 lighting products"
+    }
+  ],
+  "qa_verdict": "PASS_WITH_WARNINGS",
+  "risks": [
+    "Empty state is implemented but not reachable from the current category options."
+  ],
+  "decisions_needed": [
+    "None"
+  ],
+  "created_at": "2026-10-26T17:58:32.977Z"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "virtual-engineering-team",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cursor-native virtual engineering team: Morgan, Elena, Kai, and Sam.",
+  "type": "module",
+  "bin": {
+    "vet": "./bin/vet.js"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js demo/*.test.js",
+    "validate": "node bin/vet.js validate",
+    "board": "node bin/vet.js board",
+    "install-agents": "node bin/vet.js install-agents"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

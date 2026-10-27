@@ -1,0 +1,37 @@
+{
+  "task_id": "VET-001",
+  "sender": "kai",
+  "recipient": "sam",
+  "objective": "Verify the category filter implementation.",
+  "findings": [
+    "Filter logic lives in demo/catalog.js so Node can test it.",
+    "UI wires a labeled select and aria-live count."
+  ],
+  "files": [
+    "demo/catalog.js",
+    "demo/app.js",
+    "demo/index.html",
+    "demo/styles.css",
+    "demo/catalog.test.js"
+  ],
+  "decisions": [
+    "No extra dependencies.",
+    "Empty unknown categories return []."
+  ],
+  "constraints": [
+    "Browser visual pass is optional; logic tests are required."
+  ],
+  "expected_deliverable": "QA verdict with executed commands.",
+  "acceptance_criteria": [
+    "Node catalog tests pass.",
+    "Selecting a category would show a subset.",
+    "Empty copy exists in the DOM."
+  ],
+  "unresolved_questions": [
+    "No live browser check in this environment unless browser tools are used."
+  ],
+  "verification_evidence": [
+    "node --test demo/catalog.test.js"
+  ],
+  "created_at": "2026-10-26T17:57:29.558Z"
+}

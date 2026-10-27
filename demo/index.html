@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Studio shop</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <p class="eyebrow">Studio shop</p>
+        <h1>Products</h1>
+        <p class="lede">A small catalog used to prove the engineering team workflow.</p>
+      </header>
+
+      <div class="toolbar">
+        <label for="category-filter">Category</label>
+        <select id="category-filter">
+          <option value="all">All</option>
+        </select>
+        <p id="result-count" aria-live="polite"></p>
+      </div>
+
+      <ul id="product-list" class="grid"></ul>
+      <p id="empty-state" class="empty" hidden>No products in this category.</p>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

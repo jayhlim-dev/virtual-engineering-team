@@ -1,0 +1,14 @@
+---
+description: Safety limits for project edits, git, and secrets
+alwaysApply: true
+---
+
+# Safety
+
+- Never overwrite unrelated user changes.
+- Never reset or discard user work to make tests pass.
+- No destructive git unless the founder asked.
+- No secrets in `.agent-team/`, logs, or reports.
+- Do not install packages or change global config without a reason.
+- Do not deploy or publish unless asked.
+- If the project is outside this workspace, ask for access. Do not pretend you inspected it.

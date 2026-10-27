@@ -1,0 +1,35 @@
+{
+  "task_id": "VET-001",
+  "sender": "elena",
+  "recipient": "kai",
+  "objective": "Implement category filtering on the demo shop without redesigning the page.",
+  "findings": [
+    "The shop is a static catalog with five products and three categories.",
+    "There is no existing design system beyond demo/styles.css."
+  ],
+  "files": [
+    "demo/index.html",
+    "demo/styles.css",
+    "demo/app.js",
+    "demo/catalog.js"
+  ],
+  "decisions": [
+    "Native select labeled Category.",
+    "Value all shows every product.",
+    "Empty state text: No products in this category."
+  ],
+  "constraints": [
+    "Do not add search.",
+    "Do not add new CSS libraries.",
+    "Keep the current type and color."
+  ],
+  "expected_deliverable": "Working filter control, empty state, and testable filter helper.",
+  "acceptance_criteria": [
+    "Category filter matches product.category.",
+    "All resets the list.",
+    "Empty state appears when there are zero matches."
+  ],
+  "unresolved_questions": [],
+  "verification_evidence": [],
+  "created_at": "2026-10-26T17:57:29.520Z"
+}

@@ -1,0 +1,13 @@
+---
+description: Required fields for specialist handoffs and final reports
+globs: .agent-team/**/*
+alwaysApply: false
+---
+
+# Handoffs and reports
+
+Handoffs need: task_id, sender, recipient, objective, findings, files, decisions, constraints, expected_deliverable, acceptance_criteria, unresolved_questions, verification_evidence.
+
+Reports need: summary, files changed, commands actually run, QA verdict, risks, decisions needed.
+
+Do not write fictional agent chat logs.

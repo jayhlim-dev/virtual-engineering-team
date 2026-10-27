@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "project": "virtual-engineering-team",
+  "updated_at": "2026-10-26T17:58:32.907Z",
+  "next_id": 2,
+  "tasks": [
+    {
+      "id": "VET-001",
+      "title": "Add category filter to demo shop",
+      "status": "done",
+      "owner": "morgan",
+      "size": "standard"
+    }
+  ]
+}

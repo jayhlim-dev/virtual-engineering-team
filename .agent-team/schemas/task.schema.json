@@ -1,0 +1,35 @@
+{
+  "$id": "task.schema.json",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "size",
+    "status",
+    "owner",
+    "request",
+    "acceptance_criteria"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^VET-[0-9]{3,}$" },
+    "size": { "enum": ["quick", "standard", "complex"] },
+    "status": {
+      "enum": [
+        "draft",
+        "planned",
+        "in_progress",
+        "in_review",
+        "qa",
+        "needs_fix",
+        "done",
+        "blocked",
+        "cancelled"
+      ]
+    },
+    "owner": { "enum": ["morgan", "elena", "kai", "sam", "founder"] },
+    "qa_verdict": {
+      "type": ["string", "null"],
+      "enum": ["PASS", "PASS_WITH_WARNINGS", "FAIL", "BLOCKED", null]
+    }
+  }
+}
